@@ -32,7 +32,7 @@
       top: 0; left: 0;
       width: 100%; height: 100%;
       pointer-events: none;
-      z-index: 999;
+      z-index: -1;
     }
 
     /* ── DECORATIVE SVG LEAVES (corners) ── */
@@ -921,8 +921,8 @@
     requestAnimationFrame(animateLeaves);
   }
 
-  spawnLeaves(12);
-  setInterval(() => spawnLeaves(3), 1800);
+  spawnLeaves(18);
+  setInterval(() => spawnLeaves(5), 1400);
   animateLeaves();
 </script>
 </body>
