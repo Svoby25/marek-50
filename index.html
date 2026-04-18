@@ -893,7 +893,7 @@
         rotV: (Math.random() - 0.5) * 0.04,
         size: Math.random() * 14 + 8,
         color: LEAF_COLORS[Math.floor(Math.random() * LEAF_COLORS.length)],
-        alpha: Math.random() * 0.35 + 0.15,
+        alpha: Math.random() * 0.12 + 0.05,
         sway: Math.random() * Math.PI * 2,
         swaySpeed: Math.random() * 0.02 + 0.01,
       });
@@ -921,8 +921,8 @@
     requestAnimationFrame(animateLeaves);
   }
 
-  spawnLeaves(30);
-  setInterval(() => spawnLeaves(8), 1200);
+  spawnLeaves(12);
+  setInterval(() => spawnLeaves(3), 1800);
   animateLeaves();
 </script>
 </body>
